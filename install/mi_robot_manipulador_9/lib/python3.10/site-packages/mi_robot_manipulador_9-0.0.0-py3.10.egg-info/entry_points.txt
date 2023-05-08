@@ -1,0 +1,3 @@
+[console_scripts]
+my_node = mi_robot_manipulador_9.my_node:main
+
