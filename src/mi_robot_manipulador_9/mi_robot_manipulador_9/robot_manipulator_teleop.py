@@ -10,33 +10,33 @@ class TeleopManipulador(Node):    # Define una clase tipo 'Node'
         def __init__(self):    # Define un método llamado '__init__' que se ejecutará cuando se cree una instancia de la clase
                 super().__init__('robot_manipulador_teleop')    # Llama al método '__init__' de la clase 'Node' y le da un nombre al nodo
                 
-                self.publisher_ = self.create_publisher(Vector3, 'robot_manipulador_position', 10) #Publisher del mensaje Vecror3
+                self.publisher_ = self.create_publisher(Vector3, 'robot_manipulador_position', 10) #Publisher del mensaje Vector3
                 
                 
                 print("Ingrese los parametros")
                 # self.paso_lineal  = float(input("Ingrese tamaño del paso en grados entre 0 y 180: "))
-                self.paso_angular  = float(input("Ingrese tamaño del paso en grados entre 0 y 180: "))
+                self.paso_angular  = float(input("Ingrese tamaño del paso en grados entre 0 y 180: ")) #Prompt para ingresar el tamaño del paso para los servos
     
         def on_press(self, key): 
         
                 self.Vector3 = Vector3() 
         
-                if key == kb.KeyCode.from_char('q'):    # Si la tecla es 'q', establece lineal positiva
-                        self.Vector3._x= self.paso_angular
+                if key == kb.KeyCode.from_char('q'):    # Si la tecla pulsada es 'q', establece paso angular positivo para el servo 1
+                        self.Vector3._x= self.paso_angular #El movimiento del servo 1 se guarda en la componente x del mensaje Vector3
                         resp = print('Estas pulsando la tecla q')
-                elif key == kb.KeyCode.from_char('Q'):    # Si la tecla es 'e', establece lineal negativa
+                elif key == kb.KeyCode.from_char('Q'):    # Si la tecla es 'Q', Invierte el sentido de giro del servo 1
                         self.Vector3._x= -self.paso_angular
                         resp =  print('Estas pulsando la tecla Q')
-                elif key == kb.KeyCode.from_char('e'):    # 
-                        self.Vector3._y= self.paso_angular
+                elif key == kb.KeyCode.from_char('e'):    # Con la tecla 'e', se establece paso angular positivo para el servo 2
+                        self.Vector3._y= self.paso_angular #El movimiento del servo 2 se guarda en la componente y del mensaje Vector3
                         resp =  print('Estas pulsando la tecla e')
-                elif key == kb.KeyCode.from_char('E'):    # 
+                elif key == kb.KeyCode.from_char('E'):    # Si la tecla es 'E', Invierte el sentido de giro del servo 2
                         self.Vector3._y= -self.paso_angular
                         resp = print('Estas pulsando la tecla E')
-                elif key == kb.KeyCode.from_char('f'):    #
-                        self.Vector3._z= self.paso_angular
+                elif key == kb.KeyCode.from_char('f'):    # Con la tecla 'f', se establece paso angular positivo para el servo 3
+                        self.Vector3._z= self.paso_angular #El movimiento del servo 3 se guarda en la componente z del mensaje Vector3
                         resp =  print('Estas pulsando la tecla f')
-                elif key == kb.KeyCode.from_char('F'):    # 
+                elif key == kb.KeyCode.from_char('F'):    # si  la tecla es 'F', Invierte el sentido de giro del servo 3
                         self.Vector3._z= -self.paso_angular
                         resp =  print('Estas pulsando la tecla F')
                 else:    # Si no se presionó ninguna de las teclas anteriores, establece ambas velocidades en cero
@@ -46,14 +46,14 @@ class TeleopManipulador(Node):    # Define una clase tipo 'Node'
                 self.get_logger().info('Sending - Paso angular  : %f' % (self.Vector3._x,self.Vector3._x,self.Vector3._x))
                 self.publisher_.publish(self.Vector3)  
 
-        def on_press(self, key): 
+        def on_press(self, key): #Al soltar la tecla vuelve todos los valores a cero
         
                 self.Vector3 = Vector3() 
         
-                if key == kb.KeyCode.from_char('q'):    # Si la tecla es 'q', establece lineal positiva
+                if key == kb.KeyCode.from_char('q'):    # 
                         self.Vector3._x= 0.0
                         resp = print('Estas pulsando la tecla q')
-                elif key == kb.KeyCode.from_char('Q'):    # Si la tecla es 'e', establece lineal negativa
+                elif key == kb.KeyCode.from_char('Q'):    # 
                         self.Vector3._x= -0.0
                         resp =  print('Estas pulsando la tecla Q')
                 elif key == kb.KeyCode.from_char('e'):    # 
