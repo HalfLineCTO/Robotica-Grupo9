@@ -46,7 +46,7 @@ class TeleopManipulador(Node):    # Define una clase tipo 'Node'
                 self.get_logger().info('Sending - Paso angular  : %f' % (self.Vector3._x,self.Vector3._x,self.Vector3._x))
                 self.publisher_.publish(self.Vector3)  
 
-        def on_press(self, key): #Al soltar la tecla vuelve todos los valores a cero
+        def on_release(self, key): #Al soltar la tecla vuelve todos los valores a cero
         
                 self.Vector3 = Vector3() 
         
