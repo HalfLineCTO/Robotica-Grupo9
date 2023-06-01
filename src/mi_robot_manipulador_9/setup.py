@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'my_node = mi_robot_manipulador_9.my_node:main'
+            'my_node = mi_robot_manipulador_9.my_node:main',
+            'robot_manipulator_teleop = mi_robot_manipulador_9.robot_manipulator_teleop:main',
+            'conectionserial = mi_robot_manipulador_9.conectionserial:main'
         ],
     },
 )
