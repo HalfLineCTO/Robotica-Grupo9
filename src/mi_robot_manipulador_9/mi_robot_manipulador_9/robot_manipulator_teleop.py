@@ -7,8 +7,8 @@ from pynput import keyboard as kb
 
 class MyMessage:
     def __init__(self):
-        self.my_string = String()
-        self.my_float64 = Float64()
+        self.my_string = String() #Crea un objeto de tipo String
+        self.my_float64 = Float64() #Crea un objeto de tipo Float64
 
 class TeleopManipulador(Node):    # Define una clase tipo 'Node'
     
@@ -17,11 +17,12 @@ class TeleopManipulador(Node):    # Define una clase tipo 'Node'
                 
                 self.publisher_ = self.create_publisher(MyMessage(), 'Teleop_manipulador_topic', 10) #Publisher del mensaje
                 
-                print("Listo para teleoperar el robot manipulador")
+                print("Listo para teleoperar el robot manipulador") 
 
-                self.message = MyMessage()
-                self.message.my_string.data = "0"
-                self.message.my_float64.data = 0.0
+                self.message = MyMessage() #Crea un objeto de tipo MyMessage
+                self.message.my_string.data = "0" #Inicializa el mensaje con un string vacio
+                self.message.my_float64.data = 0.0 #Inicializa el mensaje con un float vacio
+
         def on_press(self, key): 
         
         
