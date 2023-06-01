@@ -18,9 +18,10 @@ class TeleopManipulador(Node):    # Define una clase tipo 'Node'
                 self.publisher_ = self.create_publisher(MyMessage(), 'Teleop_manipulador_topic', 10) #Publisher del mensaje
                 
                 print("Listo para teleoperar el robot manipulador")
-        from example_interfaces.msg import String, Float64
 
-        message = MyMessage() #Mensaje a publicar
+                self.message = MyMessage()
+                self.message.my_string.data = "0"
+                self.message.my_float64.data = 0.0
         def on_press(self, key): 
         
         
