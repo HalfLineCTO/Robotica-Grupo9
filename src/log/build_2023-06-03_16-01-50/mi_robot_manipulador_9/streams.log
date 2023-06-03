@@ -1,0 +1,45 @@
+[1.852s] Invoking command in '/home/juan/Documents/robotica-grupo9_ws/src/mi_robot_manipulador_9': PYTHONPATH=/home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/prefix_override:/home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/mi_robot_manipulador_9 build --build-base /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build install --record /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/install.log --single-version-externally-managed
+[2.596s] running egg_info
+[2.597s] creating ../build/mi_robot_manipulador_9/mi_robot_manipulador_9.egg-info
+[2.597s] writing ../build/mi_robot_manipulador_9/mi_robot_manipulador_9.egg-info/PKG-INFO
+[2.598s] writing dependency_links to ../build/mi_robot_manipulador_9/mi_robot_manipulador_9.egg-info/dependency_links.txt
+[2.598s] writing entry points to ../build/mi_robot_manipulador_9/mi_robot_manipulador_9.egg-info/entry_points.txt
+[2.599s] writing requirements to ../build/mi_robot_manipulador_9/mi_robot_manipulador_9.egg-info/requires.txt
+[2.599s] writing top-level names to ../build/mi_robot_manipulador_9/mi_robot_manipulador_9.egg-info/top_level.txt
+[2.599s] writing manifest file '../build/mi_robot_manipulador_9/mi_robot_manipulador_9.egg-info/SOURCES.txt'
+[2.603s] reading manifest file '../build/mi_robot_manipulador_9/mi_robot_manipulador_9.egg-info/SOURCES.txt'
+[2.605s] writing manifest file '../build/mi_robot_manipulador_9/mi_robot_manipulador_9.egg-info/SOURCES.txt'
+[2.606s] running build
+[2.606s] running build_py
+[2.606s] creating /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build
+[2.606s] creating /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build/lib
+[2.607s] creating /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build/lib/mi_robot_manipulador_9
+[2.607s] copying mi_robot_manipulador_9/__init__.py -> /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build/lib/mi_robot_manipulador_9
+[2.607s] copying mi_robot_manipulador_9/conetionserial.py -> /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build/lib/mi_robot_manipulador_9
+[2.607s] copying mi_robot_manipulador_9/my_node.py -> /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build/lib/mi_robot_manipulador_9
+[2.608s] copying mi_robot_manipulador_9/robot_manipulator_teleop.py -> /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build/lib/mi_robot_manipulador_9
+[2.608s] running install
+[2.609s] running install_lib
+[2.611s] creating /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/python3.10/site-packages/mi_robot_manipulador_9
+[2.611s] copying /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build/lib/mi_robot_manipulador_9/__init__.py -> /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/python3.10/site-packages/mi_robot_manipulador_9
+[2.612s] copying /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build/lib/mi_robot_manipulador_9/conetionserial.py -> /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/python3.10/site-packages/mi_robot_manipulador_9
+[2.612s] copying /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build/lib/mi_robot_manipulador_9/my_node.py -> /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/python3.10/site-packages/mi_robot_manipulador_9
+[2.612s] copying /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build/lib/mi_robot_manipulador_9/robot_manipulator_teleop.py -> /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/python3.10/site-packages/mi_robot_manipulador_9
+[2.613s] byte-compiling /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/python3.10/site-packages/mi_robot_manipulador_9/__init__.py to __init__.cpython-310.pyc
+[2.614s] byte-compiling /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/python3.10/site-packages/mi_robot_manipulador_9/conetionserial.py to conetionserial.cpython-310.pyc
+[2.616s] byte-compiling /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/python3.10/site-packages/mi_robot_manipulador_9/my_node.py to my_node.cpython-310.pyc
+[2.617s] byte-compiling /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/python3.10/site-packages/mi_robot_manipulador_9/robot_manipulator_teleop.py to robot_manipulator_teleop.cpython-310.pyc
+[2.620s] running install_data
+[2.622s] creating /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/share/ament_index
+[2.622s] creating /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/share/ament_index/resource_index
+[2.623s] creating /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/share/ament_index/resource_index/packages
+[2.623s] copying resource/mi_robot_manipulador_9 -> /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/share/ament_index/resource_index/packages
+[2.623s] copying package.xml -> /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/share/mi_robot_manipulador_9
+[2.623s] running install_egg_info
+[2.628s] Copying ../build/mi_robot_manipulador_9/mi_robot_manipulador_9.egg-info to /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/python3.10/site-packages/mi_robot_manipulador_9-0.0.0-py3.10.egg-info
+[2.631s] running install_scripts
+[2.674s] Installing conectionserial script to /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/mi_robot_manipulador_9
+[2.674s] Installing my_node script to /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/mi_robot_manipulador_9
+[2.675s] Installing robot_manipulator_teleop script to /home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/mi_robot_manipulador_9
+[2.675s] writing list of installed files to '/home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/install.log'
+[2.730s] Invoked command in '/home/juan/Documents/robotica-grupo9_ws/src/mi_robot_manipulador_9' returned '0': PYTHONPATH=/home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/prefix_override:/home/juan/Documents/robotica-grupo9_ws/src/install/mi_robot_manipulador_9/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/mi_robot_manipulador_9 build --build-base /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/build install --record /home/juan/Documents/robotica-grupo9_ws/src/build/mi_robot_manipulador_9/install.log --single-version-externally-managed
